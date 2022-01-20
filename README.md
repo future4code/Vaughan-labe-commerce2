@@ -13,7 +13,7 @@ O projeto consistirá em 3 grandes partes:
     - [ ] Deve haver alguma forma de ordenar os produtos por ordem crescente ou decrescente de preço (pode ser na home em si ou junto dos filtros)
     - Produtos:
         - [ ] Devem ter um botão que permita adicioná-los ao carrinho
-        - [ ]Devem exibir o nome, preço e imagem em um card
+        - [ ] Devem exibir o nome, preço e imagem em um card
 - Carrinho
     - [ ] Mostrar todos os produtos e quantidades adicionadas
     - [ ] Capacidade de remover itens do carrinho
@@ -44,5 +44,3 @@ O projeto consistirá em 3 grandes partes:
 
 ### Preview
 Link Surge
-
-g
