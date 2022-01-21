@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Barramenu from './svg/bars-solid.svg';
 import Fechar from './svg/times-solid.svg';
 import CarrinhoImg from './svg/shopping-cart-solid.svg';
+import LogoNovo from './svg/logo.svg';
 import './css/NavBar.css'
 
 
@@ -106,7 +107,7 @@ export class Header extends Component {
                 </div>
                 <Logo>
                     <H1>
-                        <a href="Logo">Logo</a>
+                        <a href="Logo"><img src={LogoNovo} alt="LogoNovo" width="180" /></a>
                     </H1>
                 </Logo>
                 <NovoNav>
@@ -128,7 +129,7 @@ export class Header extends Component {
             </NovoNav>
             </NovoHeader>
         );
-        
+
     }
 }
 
