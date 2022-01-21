@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Produtos from './Produtos';
-import Carrinho from './Carrinho'
 
 
 const NovaSection = styled.section`
