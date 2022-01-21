@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
+import Produtos from './Produtos';
+import Carrinho from './Carrinho'
 
+
+const NovaSection = styled.section`
+box-shadow: 0 0 5px #ccc;
+padding: 15px 10px;
+`
 
 
  
@@ -7,9 +15,9 @@ import React, { Component } from 'react';
 export class Section extends Component {
     render() {
         return(
-            <div>
-                <p>ESSA É A SESSÃO DO SITE</p>
-            </div>
+            <NovaSection>
+                <Produtos />
+            </NovaSection>
         )
     }
 }

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Barramenu from './svg/bars-solid.svg';
 import Fechar from './svg/times-solid.svg';
 import CarrinhoImg from './svg/shopping-cart-solid.svg';
-import {Link} from 'react-router-dom'
 import './css/NavBar.css'
 
 
@@ -100,34 +99,36 @@ export class Header extends Component {
         const {toggle} = this.state;
 
         return(
+
             <NovoHeader>
                 <div className="menu" onClick={this.menuToggle}>
                     <img src={Barramenu} alt="Icone Menu" width="20" />
                 </div>
                 <Logo>
                     <H1>
-                        <Link to="/">Logo</Link>
+                        <a href="Logo">Logo</a>
                     </H1>
                 </Logo>
                 <NovoNav>
                 <ul className={toggle ? "toggle" : ""}> 
-                    <Li><Link to="/">Home</Link></Li>      
-                    <Li><Link to="/produtos">Produtos</Link></Li>
-                    <Li><Link to="/contato">Contato</Link></Li>
-                    <Li><Link to="/login">Login / Registrar</Link></Li>
+                    <Li><a href="Home">Home</a></Li>      
+                    <Li><a href="Produtos">Produtos</a></Li>
+                    <Li><a href="Contato">Contato</a></Li>
+                    <Li><a href="Login">Login / Registrar</a></Li>
                     <li className="fechar" onClick={this.menuToggle}>
                         <img src = {Fechar}   alt="Icone para fechar"  width="20" />
                     </li>
                 </ul>
                 <Carrinho>
                     <span>0</span>
-                    <Link to="/Carrinho">
+                    <a href="Carrinho">
                     <img src = {CarrinhoImg} alt="Icone do carrinho de compras" width="20"/>
-                    </Link>
+                    </a>
                 </Carrinho>
             </NovoNav>
             </NovoHeader>
         );
+        
     }
 }
 
